@@ -26,7 +26,7 @@ class Artist
   def self.all
     @@all
   end
-
+###
   def self.create_by_name(name)
     artist = self.new(name)
     artist.name = name
@@ -45,7 +45,7 @@ class Artist
       Artist.create_by_name(name)
     end
   end
-
+###
 #  def self.find_or_create_by_name(name)
 #    if self.all.detect{|artist| artist.name == "#{name}"} #not recognizing repeats - creating new artist instances?
 #      artist.add_song(song) # New
